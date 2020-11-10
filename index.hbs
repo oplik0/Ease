@@ -12,7 +12,7 @@
                                 <header class="topic-header">
                                     <h2 class="topic-name">{{name}}</h2>
                                     <div class="topic-count">
-                                        {{plural count.posts empty="No articles" singular="1 article" plural="% articles"}}
+                                        {{plural count.posts empty=(t "No articles") singular=(t "1 article") plural=(t "% articles")}}
                                     </div>
                                 </header>
                                 {{#get "posts" order="published_at asc" filter="tag:{{slug}}"
