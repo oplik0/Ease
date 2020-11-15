@@ -55,7 +55,7 @@
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "8.0.0",
         "gulp-stylelint": "^13.0.0",
-        "gulp-uglify": "3.0.2",
+        "gulp-terser": "^1.4.1",
         "gulp-zip": "5.0.2",
         "postcss-easy-import": "3.0.0",
         "pump": "3.0.0",
