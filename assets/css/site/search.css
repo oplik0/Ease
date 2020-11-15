@@ -57,3 +57,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.search-field {
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+}
