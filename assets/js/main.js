@@ -2,6 +2,7 @@ var body = $('body');
 
 $(function () {
     'use strict';
+    changeMode(true);
     search();
     featured();
     video();
@@ -213,5 +214,26 @@ function mobileMenu() {
     'use strict';
     $('.burger').on('click', function () {
         $('body').toggleClass('menu-opened');
+    });
+}
+
+function changeMode(load = false) {
+    let darkMode = parseInt(localStorage.getItem('site-mode'));
+    if (!load) {
+        darkMode = !darkMode;
+    }
+    document
+        .querySelector(':root')
+        .classList.replace(
+            darkMode ? 'light' : 'dark',
+            darkMode ? 'dark' : 'light'
+        );
+    localStorage.setItem('site-mode', darkMode ? 1 : 0);
+}
+
+function attachModeChangeListeners() {
+    const modeChangeButton = document.querySelector('.color-mode');
+    modeChangeButton.addEventListener('click', (e) => {
+        changeMode(false);
     });
 }
