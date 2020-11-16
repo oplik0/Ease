@@ -26,3 +26,7 @@
 .menu-opened .mobile-menu {
     display: block;
 }
+
+.mobile-menu .container:last-child {
+    flex-grow: 1;
+}
