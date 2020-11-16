@@ -242,4 +242,11 @@ function attachModeChangeListeners() {
     modeChangeButton.addEventListener('click', (e) => {
         changeMode(false);
     });
+    document
+        .querySelector(':root')
+        .classList.add(
+            window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+        );
 }
