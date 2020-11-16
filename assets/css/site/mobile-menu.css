@@ -28,5 +28,5 @@
 }
 
 .mobile-menu .container:last-child {
-    flex-grow: 1;
+    margin-top: auto;
 }

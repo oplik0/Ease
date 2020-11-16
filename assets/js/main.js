@@ -236,10 +236,12 @@ function changeMode(load = false) {
 }
 
 function attachModeChangeListeners() {
-    const modeChangeButton = document.querySelector('.color-mode');
-    modeChangeButton.addEventListener('click', (e) => {
-        changeMode(false);
-    });
+    const modeChangeButtons = document.querySelectorAll('.color-mode');
+    for (const modeChangeButton of modeChangeButtons) {
+        modeChangeButton.addEventListener('click', (e) => {
+            changeMode(false);
+        });
+    }
     document
         .querySelector(':root')
         .classList.add(
