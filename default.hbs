@@ -10,8 +10,6 @@
 
     <script>
         var siteUrl = '{{@site.url}}';
-        const all = document.querySelector('*');
-        all.style.transition = '';
         document
             .querySelector(':root')
             .classList.add(
@@ -25,8 +23,6 @@
                     : 'light'
             );
         changeMode(true);
-        all.style.transition =
-            'color 0.3s ease-out, background-color 0.3s ease-out';
     </script>
 
     {{ghost_head}}

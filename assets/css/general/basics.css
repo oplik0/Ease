@@ -76,6 +76,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
 
 body {
