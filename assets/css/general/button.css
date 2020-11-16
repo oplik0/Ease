@@ -81,3 +81,8 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+.nav-button {
+    background-color: transparent;
+    color: var(--primary-text-color);
+}
