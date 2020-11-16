@@ -27,6 +27,6 @@
     display: block;
 }
 
-.mobile-menu .container:last-child {
+.mobile-nav:last-child {
     margin-top: auto;
 }
