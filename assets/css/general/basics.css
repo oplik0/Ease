@@ -70,13 +70,13 @@
 }
 html {
     box-sizing: border-box;
-    transition: color 0.2s ease-in, background-color 0.2s ease-in;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
 }
 
 body {
