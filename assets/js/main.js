@@ -1,5 +1,4 @@
 addColorClass();
-changeMode(true);
 var body = $('body');
 
 $(function () {
@@ -252,4 +251,7 @@ function addColorClass() {
                 ? 'dark'
                 : 'light'
         );
+    changeMode(true);
+    document.querySelector('*').style.transition =
+        'color 0.3s ease-out, background-color 0.3s ease-out;';
 }
