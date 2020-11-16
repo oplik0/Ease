@@ -1,4 +1,3 @@
-addColorClass();
 var body = $('body');
 
 $(function () {
@@ -242,18 +241,4 @@ function attachModeChangeListeners() {
             changeMode(false);
         });
     }
-}
-function addColorClass() {
-    const all = document.querySelector('*');
-    all.style.transition = '';
-    document
-        .querySelector(':root')
-        .classList.add(
-            window.matchMedia('(prefers-color-scheme: dark)').matches
-                ? 'dark'
-                : 'light'
-        );
-    changeMode(true);
-    all.style.transition =
-        'color 0.3s ease-out, background-color 0.3s ease-out';
 }

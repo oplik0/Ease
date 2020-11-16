@@ -10,6 +10,23 @@
 
     <script>
         var siteUrl = '{{@site.url}}';
+        const all = document.querySelector('*');
+        all.style.transition = '';
+        document
+            .querySelector(':root')
+            .classList.add(
+                parseInt(
+                    localStorage.getItem('site-mode') ??
+                        (window.matchMedia('(prefers-color-scheme: dark)').matches
+                            ? 1
+                            : 0)
+                )
+                    ? 'dark'
+                    : 'light'
+            );
+        changeMode(true);
+        all.style.transition =
+            'color 0.3s ease-out, background-color 0.3s ease-out';
     </script>
 
     {{ghost_head}}
