@@ -9,6 +9,7 @@ $(function () {
     gallery();
     table();
     mobileMenu();
+    attachModeChangeListeners();
 });
 
 document.addEventListener('lazyloaded', function (e) {
