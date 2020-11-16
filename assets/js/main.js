@@ -219,7 +219,12 @@ function mobileMenu() {
 }
 
 function changeMode(load = false) {
-    let darkMode = parseInt(localStorage.getItem('site-mode'));
+    let darkMode = parseInt(
+        localStorage.getItem('site-mode') ??
+            window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 1
+            : 0
+    );
     if (!load) {
         darkMode = !darkMode;
     }
