@@ -2,6 +2,7 @@ var body = $('body');
 
 $(function () {
     'use strict';
+    attachModeChangeListeners();
     changeMode(true);
     search();
     featured();
@@ -9,7 +10,6 @@ $(function () {
     gallery();
     table();
     mobileMenu();
-    attachModeChangeListeners();
 });
 
 document.addEventListener('lazyloaded', function (e) {
@@ -243,12 +243,7 @@ function attachModeChangeListeners() {
     document
         .querySelector(':root')
         .classList.add(
-            parseInt(
-                localStorage.getItem('site-mode') ??
-                    (window.matchMedia('(prefers-color-scheme: dark)').matches
-                        ? 1
-                        : 0)
-            )
+            window.matchMedia('(prefers-color-scheme: dark)').matches
                 ? 'dark'
                 : 'light'
         );
