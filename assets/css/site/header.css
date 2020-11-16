@@ -31,6 +31,10 @@
     max-height: 30px;
 }
 
+:root.dark .logo-image {
+    filter: saturate(5) brightness(2);
+}
+
 .logo-text {
     font-size: 24px;
     font-weight: 800;
