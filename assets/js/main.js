@@ -244,6 +244,8 @@ function attachModeChangeListeners() {
     }
 }
 function addColorClass() {
+    const all = document.querySelector('*');
+    all.style.transition = '';
     document
         .querySelector(':root')
         .classList.add(
@@ -252,6 +254,6 @@ function addColorClass() {
                 : 'light'
         );
     changeMode(true);
-    document.querySelector('*').style.transition =
-        'color 0.3s ease-out, background-color 0.3s ease-out;';
+    all.style.transition =
+        'color 0.3s ease-out, background-color 0.3s ease-out';
 }
