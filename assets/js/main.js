@@ -1,9 +1,10 @@
+addColorClass();
+changeMode(true);
 var body = $('body');
 
 $(function () {
     'use strict';
     attachModeChangeListeners();
-    changeMode(true);
     search();
     featured();
     video();
@@ -242,6 +243,8 @@ function attachModeChangeListeners() {
             changeMode(false);
         });
     }
+}
+function addColorClass() {
     document
         .querySelector(':root')
         .classList.add(
