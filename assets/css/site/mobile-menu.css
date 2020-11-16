@@ -27,6 +27,7 @@
     display: block;
 }
 
-.mobile-nav:last-child {
+.mobile-nav > .nav-button {
     margin-top: auto;
+    flex-grow: 1;
 }
