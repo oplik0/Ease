@@ -32,7 +32,7 @@
 }
 
 :root.dark .logo-image {
-    filter: saturate(5) brightness(2);
+    filter: saturate(2.5) brightness(5);
 }
 
 .logo-text {
