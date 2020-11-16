@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --primary-color: #de1444;
     --primary-text-color: #333;
     --secondary-text-color: #999;
@@ -33,7 +33,7 @@
         --animation-base: ease-in-out;
         --navbar-height: 70px;
     }
-}
+}*/
 :root.light {
     --primary-color: #de1444;
     --primary-text-color: #333;
