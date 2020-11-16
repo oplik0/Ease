@@ -371,3 +371,7 @@ div[class^="col-"] {
         display: none !important;
     }
 }
+
+.container:has(.mobile-nav) {
+    height: 100%;
+}
