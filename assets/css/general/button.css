@@ -85,4 +85,5 @@
 .nav-button {
     background-color: transparent;
     color: var(--primary-text-color);
+    fill: var(--primary-text-color);
 }
