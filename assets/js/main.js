@@ -243,7 +243,12 @@ function attachModeChangeListeners() {
     document
         .querySelector(':root')
         .classList.add(
-            window.matchMedia('(prefers-color-scheme: dark)').matches
+            parseInt(
+                localStorage.getItem('site-mode') ??
+                    (window.matchMedia('(prefers-color-scheme: dark)').matches
+                        ? 1
+                        : 0)
+            )
                 ? 'dark'
                 : 'light'
         );
