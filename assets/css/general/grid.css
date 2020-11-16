@@ -5,6 +5,7 @@
     padding-left: 4vw;
     max-width: calc(1130px + 8vw);
     width: 100%;
+    height: 100%;
 }
 
 .container.large {
@@ -370,8 +371,4 @@ div[class^="col-"] {
     .hidden-xl {
         display: none !important;
     }
-}
-
-.container:has(.mobile-nav) {
-    height: 100%;
 }
