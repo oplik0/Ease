@@ -63,7 +63,7 @@
 .u-overlay.initialized::before {
     opacity: 0.4;
 }
-.remove-color-overlay {
+.remove-color-overlay + .u-overlay {
     background-color: none !important;
 }
 

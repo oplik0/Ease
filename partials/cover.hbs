@@ -1,4 +1,7 @@
-<div class="site-cover u-overlay {{if @site.cover_image 'remove-color-overlay'}}">
+{{#if @site.cover_image}}
+<div class='remove-color-overlay'></div>
+{{/if}}
+<div class="site-cover u-overlay">
     {{#if @site.cover_image}}
         <img class="cover-image lazyload jarallax-img u-object-fit"
             data-src="{{img_url @site.cover_image}}"
