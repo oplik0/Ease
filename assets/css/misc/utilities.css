@@ -63,6 +63,9 @@
 .u-overlay.initialized::before {
     opacity: 0.4;
 }
+.remove-color-overlay {
+    background-color: none !important;
+}
 
 .u-hover-item {
     transition: opacity 0.2s var(--animation-base);
