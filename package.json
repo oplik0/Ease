@@ -1,21 +1,27 @@
 {
-    "name": "ease",
-    "description": "A Ghost theme",
+    "name": "cherryblog",
+    "description": "An Ease-based Ghost theme with a cherry on top",
     "version": "1.1.1",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
     },
     "license": "MIT",
-    "author": {
+    "authors": {
         "name": "Ghost Foundation",
         "email": "hello@ghost.org",
         "url": "https://ghost.org"
     },
+    "contributors": [
+        {
+            "name": "oplik0"
+        }
+    ],
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
+        "wisniowasu"
     ],
     "config": {
         "posts_per_page": 5,

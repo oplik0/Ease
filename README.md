@@ -1,8 +1,8 @@
-# Ease
+# Cherryblog theme
 
-A versatile theme suitable for documentation. Publish your posts or business information with ease. Completely free and fully responsive, released under the MIT license.
+A documentation-focused theme based on [Ease](https://github.com/Try-Ghost/Ease)
 
-**Demo: https://ease.ghost.io**
+**Demo: https://blog.wisniowasu.pl**
 
 &nbsp;
 
@@ -18,8 +18,8 @@ A versatile theme suitable for documentation. Publish your posts or business inf
 
 ```html
 <script>
-    var gh_search_key = 'API_KEY';
-    var gh_search_migration = 'v1';
+    var gh_search_key = "API_KEY";
+    var gh_search_migration = "v1";
 </script>
 ```
 
@@ -49,7 +49,7 @@ yarn zip
 
 # PostCSS Features Used
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
+-   Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
 
 # Copyright & License
 
